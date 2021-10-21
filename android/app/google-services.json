@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134224923487",
+    "project_id": "exitiv",
+    "storage_bucket": "exitiv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134224923487:android:24686ab5f432619d06c4ea",
+        "android_client_info": {
+          "package_name": "com.example.exitiv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134224923487-jjtegb225g2v3n0a5tuaqelhpvnjatog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeSMpqWoqRzku-9uZ6ZC2j3FBj0wnmPaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134224923487-jjtegb225g2v3n0a5tuaqelhpvnjatog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
