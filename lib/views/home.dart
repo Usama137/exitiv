@@ -20,7 +20,6 @@ class _HomeState extends State<Home> {
     Reserve(),
     Account(),
   ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -31,14 +30,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color(0xff052D76),
-
         body:
              Center(
               child: _widgetOptions.elementAt(_selectedIndex),
             ),
-
-
-
         bottomNavigationBar: Theme(
           data: Theme.of(context).copyWith(
               // sets the background color of the `BottomNavigationBar`

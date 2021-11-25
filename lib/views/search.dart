@@ -1,4 +1,6 @@
+import 'package:exitiv/components/button.dart';
 import 'package:exitiv/sizes_helpers.dart';
+import 'package:exitiv/views/search_hotel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -113,122 +115,60 @@ class _SearchState extends State<Search> {
 
                       child: Row(
                         children: [
-                          Spacer(),
-                          Container(
-                            height: 80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              color: Color(0xff1460E1),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                //
-                              },
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
 
-                                  Icon(CupertinoIcons.square_stack_3d_down_right_fill, color:Colors.white,),
-                                  SizedBox(height: 3,),
-                                  Text("Hotels", style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                  ),)
-                                ],
-                              ),
-
-                            ),
+                          const Spacer(),
+                          NameIconButton(
+                            buttonWidth: 80,
+                            buttonHeight: 80,
+                            buttonColor: Color(0xff1460E1),
+                            title: "Hotels",
+                            icon: CupertinoIcons.square_stack_3d_down_right_fill,
+                            textColor: Colors.white,
+                            onPressed: (){
+                              Navigator.pushNamed(
+                                  context, SearchHotel.id);
+                            },
                           ),
-                          Spacer(),
 
-                          Container(
-                            height: 80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              color: Color(0xff1460E1),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                //
-                              },
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                          const Spacer(),
 
-                                    Icon(CupertinoIcons.airplane, color:Colors.white,),
-                                    SizedBox(height: 3,),
-                                    Text("Trips", style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12,
-                                    ),)
-                                  ],
-                                ),
+                          NameIconButton(
+                            buttonWidth: 80,
+                            buttonHeight: 80,
+                            buttonColor: Color(0xff1460E1),
+                            title: "Trips",
+                            icon: CupertinoIcons.airplane,
+                            textColor: Colors.white,
+                            onPressed: (){
 
-                            ),
+                            },
                           ),
-                          Spacer(),
 
-                          Container(
-                            height: 80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              color: Color(0xff1460E1),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                //
-                              },
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
 
-                                  Icon(CupertinoIcons.car, color:Colors.white,),
-                                  SizedBox(height: 3,),
-                                  Text("Rental cars", style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                  ),)
-                                ],
-                              ),
+                          const Spacer(),
 
-                            ),
+                          NameIconButton(
+                            buttonWidth: 80,
+                            buttonHeight: 80,
+                            buttonColor: Color(0xff1460E1),
+                            title: "Rental Cars",
+                            icon: CupertinoIcons.car,
+                            textColor: Colors.white,
                           ),
-                          Spacer(),
 
-                          Container(
-                            height: 80,
-                            width: 80,
-                            decoration: BoxDecoration(
-                              color: Color(0xff1460E1),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: GestureDetector(
-                              onTap: (){
-                                //
-                              },
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                          const Spacer(),
 
-                                  Icon(CupertinoIcons.location_fill, color:Colors.white,),
-                                  SizedBox(height: 3,),
-                                  Text("Excursions", style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 12,
-                                  ),)
-                                ],
-                              ),
-
-                            ),
+                          NameIconButton(
+                            buttonWidth: 80,
+                            buttonHeight: 80,
+                            buttonColor: Color(0xff1460E1),
+                            title: "Excursions",
+                            icon: CupertinoIcons.location_fill,
+                            textColor: Colors.white,
                           ),
-                          Spacer(),
+
+
+                          const Spacer(),
 
                         ],
                       ),
